@@ -1,0 +1,126 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: Ubuntu, sans-serif;
+
+}
+
+:root{
+  --blue:  #226ED8;
+  --black: #111111;
+  --white: #FDFDFD;
+}
+
+/* First section*/
+.first-section{
+  width: 100vw;
+  height: 80vh;
+  position: relative;
+}
+
+.background-image{
+  position: absolute;
+  width: 100vw;
+  height: 80vh;
+  object-fit: cover;
+  opacity: 15%;
+}
+.content-container{
+  padding: 49px 30px 50px 90px;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.content-left-side{
+  display: flex;
+  align-items: center;
+}
+
+.content-left-side p{
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-family: Ubuntu Mono, sans-serif;
+}
+
+.content-left-side img {
+  width: 54px;
+  height: 54px;
+  margin-right: 5px;
+}
+
+.social-media{
+  margin-right: 40px;
+}
+.social-media a{
+  display: inline-block;
+  text-decoration: none; 
+  margin-right: 15px;
+}
+
+.social-media img{
+  width: 20px;
+  height: 20px;
+  color: var(--black);
+}
+
+
+.main-content{
+  margin-top: 100px;
+  margin-bottom: 20px;
+  position: absolute;
+  font-family: Ubuntu, sans-serif;
+}
+
+.main-content p{
+  font-size: 33px;
+  line-height: 48px;
+  font-weight: 400;
+}
+
+.main-content p strong{
+  font-size: 34px;
+  line-height: 48px;
+  font-weight: 500;
+}
+
+.main-content span{
+  display: block;
+  color: rgba(17, 17, 17, 0.5);
+  margin: 20px 0 20px 0;
+  font-family: Ubuntu, sans-serif;
+}
+.date{
+  color: var(--blue);
+}
+
+.enroll{
+  width: 137px;
+  height: 45px;
+  font-size: 18px;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 25px;
+  margin-right: 20px;
+  border:none;
+  transition: background-color 0.2s;
+}
+ 
+
+.enroll:hover{
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.edict{
+  text-decoration: none;
+  color: var(--blue);
+}
