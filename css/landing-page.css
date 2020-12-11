@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   border: 0;
+  box-sizing: border-box;
   font-family: Ubuntu, sans-serif;
 
 }
@@ -10,19 +11,20 @@
   --blue:  #226ED8;
   --black: #111111;
   --white: #FDFDFD;
+  --gray: #F2F3F4;
+  --purple: #3F3D56;
 }
 
 /* First section*/
 .first-section{
-  width: 100vw;
-  height: 80vh;
+  height: 554px;
   position: relative;
+  overflow: hidden;
 }
 
 .background-image{
   position: absolute;
   width: 100vw;
-  height: 80vh;
   object-fit: cover;
   opacity: 15%;
 }
@@ -78,13 +80,14 @@
   font-family: Ubuntu, sans-serif;
 }
 
-.main-content p{
+.main-content h2{
   font-size: 33px;
   line-height: 48px;
   font-weight: 400;
+  display: block;
 }
 
-.main-content p strong{
+.main-content h2 strong{
   font-size: 34px;
   line-height: 48px;
   font-weight: 500;
@@ -123,4 +126,94 @@
 .edict{
   text-decoration: none;
   color: var(--blue);
+}
+
+/*Second section*/
+.second-section{
+}
+.second-content-container{
+  padding: 49px 30px 50px 90px;
+}
+
+.second-content-container h2{
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 500;
+  margin-bottom: 36px;
+}
+
+.about{
+  background: var(--gray);
+  width: 761px;
+  height: 272px;
+  display: flex;
+  border: none;
+  margin-bottom: 80px;
+}
+
+.about img{
+  width: 347px;
+  height: 272px;
+  object-fit: cover;
+}
+
+.about p{
+  display: block;
+  padding: 40px;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--black);
+  opacity: 0.8;
+  text-align: justify;
+  font-weight: 400;
+} 
+
+.jobs{
+  width: 90%;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.card-job{
+  flex-basis: 30%;
+  flex-grow: 1;
+  margin-right: 15px;
+  margin-bottom: 30px;
+}
+
+.card-job img{
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+.card-job span{
+  display: inline;
+}
+
+.job-name{
+  color:var(--blue);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.project{
+  color: var(--purple);
+  opacity: 0.5;
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.description-job{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black);
+  text-align: justify;
+  margin-top: 10px;
+  padding: 10px;
 }
