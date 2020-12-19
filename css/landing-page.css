@@ -30,6 +30,7 @@
 }
 .content-container {
   padding: 49px 30px 50px 90px;
+  height: 554px;
 }
 
 .header {
@@ -58,42 +59,35 @@
   margin-right: 5px;
 }
 
-.social-media {
-  margin-right: 40px;
-}
-.social-media a {
-  display: inline-block;
-  text-decoration: none;
-  margin-right: 15px;
-}
-
-.social-media img {
-  width: 20px;
-  height: 20px;
-  color: var(--black);
-}
-
 .main-content {
+  display: flex;
+  width: 90%;
+  height: 60%;
   margin-top: 100px;
   margin-bottom: 20px;
   position: absolute;
   font-family: Ubuntu, sans-serif;
 }
 
-.main-content h2 {
+.left-content-main{
+  width: 30%;
+  position: absolute;
+}
+
+.left-content-main h2 {
   font-size: 33px;
   line-height: 48px;
   font-weight: 400;
   display: block;
 }
 
-.main-content h2 strong {
+.left-content-main h2 strong {
   font-size: 34px;
   line-height: 48px;
   font-weight: 500;
 }
 
-.main-content span {
+.left-content-main span {
   display: block;
   color: rgba(17, 17, 17, 0.5);
   margin: 20px 0 20px 0;
@@ -103,6 +97,9 @@
   color: var(--blue);
 }
 
+.links{
+  display: flex;
+}
 .enroll {
   width: 137px;
   height: 45px;
@@ -121,15 +118,45 @@
   color: var(--blue);
   border: 1px solid var(--blue);
 }
+.edict{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
 
-.edict {
+}
+.edict a{
   text-decoration: none;
   color: var(--blue);
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.edict:hover{
+  cursor: pointer;
+}
+
+.social-media {
+  position: absolute;
+  margin-left: 95%;
+  margin-top: 20px; 
+}
+.social-media a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+
+.social-media img {
+  width: 20px;
+  height: 20px;
 }
 
 /*Second section*/
-.second-section {
-}
+/* .second-section {
+} */
 .second-content-container {
   padding: 49px 30px 50px 90px;
 }
@@ -146,7 +173,7 @@
   width: 761px;
   height: 272px;
   display: flex;
-  border: none;
+  border-radius: 6px;
   margin-bottom: 80px;
 }
 
@@ -154,6 +181,7 @@
   width: 347px;
   height: 272px;
   object-fit: cover;
+  border-radius: 6px 0 0 6px;
 }
 
 .about p {
@@ -259,12 +287,12 @@
 } */
 
 /* Fourth Section*/
-.fourth-section{
+.fourth-section {
   background: var(--black);
-  height:400px;
+  height: 400px;
   position: relative;
 }
-.fourth-content-container{
+.fourth-content-container {
   margin-top: 72px;
   /* background: yellow; */
   position: absolute;
@@ -273,7 +301,7 @@
 .social-media-footer {
   margin-left: 100px;
 }
-.left-content-footer{
+.left-content-footer {
   display: flex;
   align-items: center;
   /* background: red; */
@@ -290,7 +318,7 @@
   height: 20px;
 }
 
-.unect-site{
+.unect-site {
   font-size: 15px;
   font-weight: 400;
   line-height: 26px;
