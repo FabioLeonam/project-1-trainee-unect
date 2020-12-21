@@ -35,9 +35,9 @@
               <strong class="date">06/11</strong>!</span>
             
             <div class="links">
-              <button class="enroll">Inscreva-se</button>
+              <button class="enroll" target="_blank">Inscreva-se</button>
               <div class="edict">
-                <a href="#">Edital</a>
+                <a href="#" target="_blank">Edital</a>
                 <img src="./images/chevron-right.svg" alt="">
               </div>
             </div>
@@ -46,13 +46,13 @@
           </div>
 
           <div class="social-media">
-            <a href="#">
+            <a href="https://www.facebook.com/UnectJr" target="_blank">
               <img src="./images/facebook.svg" alt="Facebook" />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/unectjr/" target="_blank">
               <img src="./images/instagram.svg" alt="Instagram" />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/company/unect-jr./" target="_blank">
               <img src="./images/linkedin.svg" alt="Linkedin" />
             </a>
           </div>
@@ -62,7 +62,15 @@
 
     <section class="second-section">
       <div class="second-content-container">
-        <h2 class="animate-up">Sobre nós</h2>
+        <div class="header-second-section animate-up">
+          <h2 class="about-us">Sobre nós</h2>
+          <div class="question">
+            <span>Envie sua dúvida</span>
+            <img src="./images/question-circle.svg" alt="Envie sua dúvida?">
+          </div>
+        </div>
+
+
         <div class="about">
           <img src="./images/sobre-bg.png" alt="Time da Unect" />
           <p class="text-about">
@@ -74,7 +82,7 @@
           </p>
         </div>
 
-        <h2>Vagas</h2>
+        <h2 class="vagas">Vagas</h2>
         <div class="jobs">
           <div class="card-job">
             <img src="./images/design.svg" alt="" />
@@ -163,19 +171,65 @@
       <footer class="fourth-content-container">
         <div class="left-content-footer">
           <div class="social-media-footer">
-            <a href="#">
+            <a href="https://www.facebook.com/UnectJr" target="_blank">
               <img src="./images/facebook-white.svg" alt="Facebook" />
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/unectjr/" target="_blank">
               <img src="./images/instagram-white.svg" alt="Instagram" />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/company/unect-jr./" target="_blank">
               <img src="./images/linkedin-white.svg" alt="Linkedin" />
             </a>
           </div>
-          <a class="unect-site" href="#">unect.com.br</a>
+          <a class="unect-site" href="https://www.unect.com.br/" target="_blank">unect.com.br</a>
+        </div>
+
+        <div class="center-content-footer">
+          <img src="./images/fxemoji_pineapple.svg" alt="">
+          <img src="./images/twemoji_blue-heart.svg" alt="">
+          <img src="./images/emojione_monkey-face.svg" alt="">
+        </div>
+
+        <div class="right-content-footer">
+          <span>rh.unect@gmail.com</spam> 
+          <hr class="line-footer"> 
+          <span> ©2020 Unect Jr.</span>
         </div>
       </footer>
     </section>
+
+    <!-- Modal -->
+    <div id="background-modal" class="modal-container">
+      <div class="modal">
+        <div class="header-modal">
+          <p id="title-header-modal">Pergunte pra gente 😊</p> 
+        </div>
+        <div class="formulario">
+          <form>
+            <div class="input-block">
+              <label for="name">Nome</label>
+              <input id="name" placeholder="John Doe" />
+            </div>
+
+            <div class="input-block">
+              <label for="email">E-mail</label>
+              <input type="email" placeholder="johndoe@me.com" />
+            </div>
+
+            <div class="input-block">
+              <label for="message">Mensagem</label>
+              <textarea type="message" placeholder="Escreva aqui..."></textarea>
+            </div>
+
+            <div class="form-buttons">
+              <button id="cancel-modal" class="form-button">Cancelar</button>
+              <input id="submit-modal" class="form-button" type="button" value="Enviar">
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
   </body>
 </html>
