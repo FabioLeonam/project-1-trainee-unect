@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unect Jr. | Processo Seletivo 2021</title>
 
-    <link rel="icon" href="./images/unect-logo.svg" type="image/icon type" />
+    <link rel="icon" href="./images/unect-logo.svg" />
     <link rel="stylesheet" href="./css/landing-page.css" />
     <link rel="stylesheet" href="./css/animations.css" />
     <link
@@ -18,12 +18,10 @@
       <img class="background-image" src="./images/hero-image.png" />
       <div class="content-container animate-up">
         <header class="header">
-          <div class="content-left-side">
             <a href="landing-page.html">
               <img src="./images/unect-logo.svg" alt="Logo da Unect Jr." />
             </a>
             <p>< Processo Seletivo 2021 ></p>
-          </div>
         </header>
 
         <main class="main-content">
@@ -35,9 +33,9 @@
               <strong class="date">06/11</strong>!</span>
             
             <div class="links">
-              <button class="enroll" target="_blank">Inscreva-se</button>
+              <button class="enroll">Inscreva-se</button>
               <div class="edict">
-                <a href="#" target="_blank">Edital</a>
+                <a href="#">Edital</a>
                 <img src="./images/chevron-right.svg" alt="">
               </div>
             </div>
@@ -70,17 +68,33 @@
           </div>
         </div>
 
-
-        <div class="about">
-          <img src="./images/sobre-bg.png" alt="Time da Unect" />
-          <p class="text-about">
-            A Unect Jr. é uma Empresa Júnior vinculada aos cursos de Computação
-            da UTFPR-CP que desenvolve sites, aplicações mobile e web, e que
-            busca, através da vivência empresarial, proporcionar aos seus
-            membros o ambiente ideal para que eles se desenvolvam e apliquem os
-            seus conhecimentos, que vão muito além da área de computação.
-          </p>
-        </div>
+          <div class="about-company">
+            <div class="carousel-container"> 
+              <div class="carousel-slide">
+                <img src="./images/unect-team.jpg" id="lastClone" alt="Time da Unect" />
+                <img src="./images/sobre-bg.png" alt="Time da Unect" />
+                <img src="./images/hero-image.png" alt="Time da Unect" />
+                <img src="./images/unect-team2.jpg" alt="Time da Unect" />
+                <img src="./images/unect-team.jpg" alt="Time da Unect" />
+                <img src="./images/sobre-bg.png" id="firstClone" alt="Time da Unect" />
+              </div>
+              <button id="prevButton"><img src="./images/entypo_chevron-thin-left.svg" alt=""></button>
+              <button id="nextButton"><img src="./images/entypo_chevron-thin-right.svg" alt=""></button>
+            </div>
+            
+            <div class="about">
+              <p>
+                A Unect Jr. é uma Empresa Júnior vinculada aos cursos de Computação
+                da UTFPR-CP que desenvolve sites, aplicações mobile e web, e que
+                busca, através da vivência empresarial, proporcionar aos seus
+                membros o ambiente ideal para que eles se desenvolvam e apliquem os
+                seus conhecimentos, que vão muito além da área de computação.
+              </p>
+            </div>
+          </div>
+            
+      
+          
 
         <h2 class="vagas">Vagas</h2>
         <div class="jobs">

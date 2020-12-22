@@ -25,28 +25,22 @@
 
 .background-image {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   object-fit: cover;
   opacity: 15%;
 }
 .content-container {
-  padding: 49px 30px 50px 90px;
+  padding: 30px 30px 50px 90px;
   height: 554px;
 }
 
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   position: relative;
 }
 
-.content-left-side {
-  display: flex;
-  align-items: center;
-}
-
-.content-left-side p {
+.header p {
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -54,10 +48,10 @@
   opacity: 0.5;
 }
 
-.content-left-side img {
-  width: 54px;
+.header img {
+  width: 32px;
   height: 54px;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 
 .main-content {
@@ -67,7 +61,7 @@
   justify-content: space-between;
   width: 100%;
   height: 60%;
-  margin-top: 100px;
+  margin-top: 92px;
   margin-bottom: 20px;
   font-family: Ubuntu, sans-serif;
 }
@@ -112,7 +106,8 @@
   border-radius: 25px;
   margin-right: 20px;
   border: none;
-  transition: background-color 0.2s;
+  transition: background-color .4s;
+  outline: none;
 }
 
 .enroll:hover {
@@ -134,7 +129,7 @@
   font-size: 18px;
   line-height: 20px;
   text-align: center;
-  margin-right: 5px;
+  margin-right: 7px;
 }
 
 .edict:hover{
@@ -157,7 +152,7 @@
   height: 20px;
 }
 
-/*Second section*/
+/* ------------- Second section -------------------*/
 .second-section {
   position: relative;
 }
@@ -217,21 +212,65 @@
   animation: showSentece .7s forwards;
 }
 
+.about-company{
+  display: flex;
+  margin-bottom: 80px;
+}
+.carousel-container{
+  display: flex;
+  overflow: hidden;
+  width: 347px;
+  height: 272px;
+  margin: 0;
+  border-radius: 6px 0 0 6px;
+ 
+}
+
+.carousel-slide{
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-slide img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+#prevButton{
+  position: absolute;
+  top: 24%;
+  background: none;
+  left: 7%;
+  z-index: 10px;
+  outline: none;
+  opacity: 0.5;
+}
+
+#nextButton{
+  position: absolute;
+  top: 24%;
+  left: 29%;
+  background: none;
+  z-index: 10px;
+  outline: none;
+  opacity: 0.5;
+}
+
+#prevButton:hover,
+#nextButton:hover{
+  opacity: 1;
+  cursor: pointer;
+  zoom: 1.1;
+}
 
 .about {
   background: var(--alice-blue);
-  width: 761px;
+  width: 414px;
   height: 272px;
   display: flex;
   border-radius: 6px;
-  margin-bottom: 80px;
-}
-
-.about img {
-  width: 347px;
-  height: 272px;
-  object-fit: cover;
-  border-radius: 6px 0 0 6px;
 }
 
 .about p {
@@ -349,22 +388,23 @@
   position: relative;
 }
 .fourth-content-container {
-  margin-top: 72px;
+  padding: 49px 30px 50px 90px;
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 95%;
 }
-.social-media-footer {
-  margin-left: 100px;
-}
 .left-content-footer {
   display: flex;
   align-items: center;
 }
+.social-media-footer{
+  align-items: center;
+  justify-content: center;
+}
 .social-media-footer a {
-  display: inline;
+  display: inline-block;
   text-decoration: none;
   margin-right: 15px;
 }
