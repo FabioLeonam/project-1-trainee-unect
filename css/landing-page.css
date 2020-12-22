@@ -209,7 +209,7 @@
 .question:hover span{
   margin-left: 10px;
   display: inline;
-  animation: showSentece .7s forwards;
+  animation: showSentence .7s forwards;
 }
 
 .about-company{
@@ -389,7 +389,6 @@
 }
 .fourth-content-container {
   padding: 49px 30px 50px 90px;
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -489,7 +488,7 @@
   line-height: 29px;
 }
 
-.formulario{
+.main-content-modal{
   padding: 20px 30px 5px 30px;
 }
 
@@ -499,6 +498,7 @@
   color: var(--black);
   font-size: 16px;
   line-height: 18px;
+  font-weight: 400;
   margin: 10px 0;
 }
 
@@ -538,7 +538,6 @@
   margin-left: 20px;
   cursor: pointer;
   padding: 7px;
-  border: 1px;
   outline: none;
 }
 
@@ -561,3 +560,4 @@
 .show .modal{
   animation: modal .7s;
 }
+

@@ -11,7 +11,7 @@
 
 .animate-up {
   animation-name: up;
-  animation-duration: 600ms;
+  animation-duration: 800ms;
   animation-fill-mode: backwards; /*faz com que o que está no "to" fiquem aplicados no elemento*/
 }
 
@@ -41,7 +41,7 @@
   }
 }
 
-@keyframes showSentece {
+@keyframes showSentence {
   0% {
     opacity: 0
   }
