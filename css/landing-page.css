@@ -9,6 +9,7 @@
 :root {
   --blue: #226ed8;
   --black: #111111;
+  --gray9: #171717;
   --white: #fdfdfd;
   --alice-blue: #f2f3f4;
   --purple: #3f3d56;
@@ -182,6 +183,8 @@
   background: var(--black);
   border-radius: 100%;
   margin-right: 5%;
+  position: fixed;
+  right: 2%;
 }
 
 .question span{
@@ -383,7 +386,7 @@
 
 /* Fourth Section*/
 .fourth-section {
-  background: var(--black);
+  background: var(--gray9);
   height: 400px;
   position: relative;
 }
@@ -518,10 +521,12 @@
 
 .input-block input{
   height: 35px;
+  padding: 5px;
 }
 
 .input-block textarea{
   height: 110px;
+  padding: 5px;
 }
 
 .form-buttons{
