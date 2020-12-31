@@ -122,8 +122,12 @@
   align-items: center;
   justify-content: center;
   background: none;
-
 }
+
+.edict:hover{
+  cursor: pointer;
+}
+
 .edict a{
   text-decoration: none;
   color: var(--blue);
@@ -131,11 +135,13 @@
   line-height: 20px;
   text-align: center;
   margin-right: 7px;
+  transition: all .2s;
 }
 
-.edict:hover{
-  cursor: pointer;
+.edict a:hover{
+  margin-right: 10px;
 }
+
 
 .social-media {
   position: absolute;
