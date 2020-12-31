@@ -27,21 +27,7 @@
   }
 }
 
-@keyframes showBox {
-  0% {
-    width: 50px;
-    border-radius: 50%;
-  }
-  20% {
-    border-radius: 12px;
-  }
-  100% {
-    width: 170px;
-    border-radius: 12px;
-  }
-}
-
-@keyframes showSentence {
+@keyframes showSentenceAndIcon {
   0% {
     opacity: 0
   }

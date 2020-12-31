@@ -188,10 +188,13 @@
   justify-content: space-between;
   background: var(--black);
   border-radius: 100%;
+  width: 35px;
+  height: 35px;
   margin-right: 5%;
   position: fixed;
   right: 2%;
   z-index: 10;
+  transition: all .4s ease-out;
 }
 
 .question span{
@@ -213,13 +216,16 @@
   cursor: pointer;
   border-radius: 25px;
   width: 170px;
-  animation: showBox .7s forwards;
 }
 
 .question:hover span{
   margin-left: 10px;
   display: inline;
-  animation: showSentence .7s forwards;
+  animation: showSentenceAndIcon .5s forwards;
+}
+
+.question:hover img{
+  animation: showSentenceAndIcon .5s forwards;
 }
 
 .about-company{
@@ -377,19 +383,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
-/* .logo {
-  width: 200px;
-  height: 100px;
-  margin-right: 20px;
-  overflow: visible;
-}
-.logo img {
-  width: 100px;
-  height: 50px;
-  object-fit: cover;
-  margin-right: 20px;
-} */
 
 /* Fourth Section*/
 .fourth-section {
